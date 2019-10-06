@@ -130,10 +130,11 @@ public void toStringPower(String pow){
                     System.out.println(arch[i].getPhoto());
                     System.out.println(arch[i].getDate().getDay());
                     System.out.println(arch[i].getDate().getMonth());
+                    val=true;
             }
       	}
       	else{
- 	   		System.out.print("Error: the angel doesn't exist");
+ 	   		System.out.print("Error: the angel doesn't exist\n");
  	   		val =true;
     	}
      }
