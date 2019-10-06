@@ -16,7 +16,7 @@ Main obj = new Main();
 Scanner teclado = new Scanner(System.in);
 Scanner teclado1 = new Scanner(System.in);
 int option = 0;
-int helper = obj.getCant1();
+int helper = obj.getCant();
 boolean val = true;
 
 
@@ -117,7 +117,7 @@ public void toStringPower(String pow){
 	objLeg.toStringPower(pow); 
 }
 
-public int getCant1(){
+public int getCant(){
 	int num =objLeg.getCant();
 	return num;
 }
