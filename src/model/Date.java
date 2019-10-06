@@ -1,4 +1,4 @@
-
+package model;
 public class Date{
 	private int day;
 	private String month;
