@@ -18,34 +18,6 @@ public Archangel(String name,String photo,String power,String pray,Candle cand,D
 	this.cand=cand;
 
 }
-/*public String addCandle(String pcolor,double psize,String pessence,int plight){
-	String msg = "";
-	Candle can1 = new Candle(pcolor,psize,pessence,plight);
-	boolean val = true;
-	for(int i = 0;i<cand.length()&&val;i++){
-		if(cand[i]==null){
-			cand[i]=can1;
-			msg = "\nThe candle has been added sucesfully\n";
-			val =false;
-		}
-	}
-return msg;
-	
-}
-public String addDate(int pday,String pmonth){
-	String msg = "";
-		Date fecha = new Date(pday,pmonth);
-	    boolean val = true;
-	    for(int i =0;i<date.length()&&val;i++){
-	    	if(date[i]==null){
-	    		date[i]=fecha;
-	    		val = false;
-	    		msg="The date has been added sucessfully";
-	    	}
-	    }
-	    return msg;
-}
-*/
 
 //Get mehods
 public String getName(){
