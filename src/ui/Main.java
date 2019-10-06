@@ -60,7 +60,10 @@ switch(option){
 
 }
 
-
+/**
+* This method recollect the information to create an archangel <br>
+* <b>post: </b> The information has been recollected.<br>
+*/
 public void createArchangel(){
 	Scanner teclado = new Scanner(System.in);
 	Scanner teclado1 = new Scanner(System.in);
@@ -89,7 +92,10 @@ public void createArchangel(){
     System.out.print(objLeg.addArchangel(name,photo,power,pray,color,size,essence,light,day,month,can1,dat1));
 	
 }
-
+/**
+* This method show the menu of options <br>
+* <b>post: </b> The menu has been showed.<br>
+*/
 public void showMenu(){
 System.out.print("------------------------------------------------\n");
 System.out.print(""+""+""+"Please select one option to continue"+""+""+"\n");

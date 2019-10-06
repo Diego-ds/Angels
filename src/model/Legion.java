@@ -10,6 +10,25 @@ public Legion(String name, int c){
 	this.cant =c;
 }
 
+/**
+* This method adds an archangel to the legion <br>
+* <b>pre: </b> The objects candle and date must be created.<br>
+* <b>post: </b> The archangel has been added.<br>
+* @param pname Name of the archangel. pname != null &amp;&amp; pname != "".
+* @param pphoto Photo of the archangel. pphoto != null &amp;&amp; pphoto != "".
+* @param ppower Power of the archangel. ppower != null &amp;&amp; ppower != "".
+* @param ppray Pray of the archangel. ppray != null &amp;&amp; ppray != "".
+* @param pcolor Color of the candle. pcolor != null &amp;&amp; pcolor != "".
+* @param psize Size of the candle. psize != null &amp;&amp; psize != "".
+* @param pessence Essence of the candle. pessence != null &amp;&amp; pessence != "".
+* @param plight Light degree of the candle. plight != null &amp;&amp; plight != "".
+* @param pday Day of the date. pday != null &amp;&amp; pday != "".
+* @param pmonth Month of the date. pmonth != null &amp;&amp; pmonth != "".
+* @param cand Candle object of the archangel. cand != null.
+* @param date Date object of the archangel. date != null.
+* @return msg Indicating if the archangel was registered or not. msg != null &amp;&amp; msg != "".
+*/
+
 public String addArchangel(String pname,String pphoto,String ppower,String ppray,String pcolor,double psize,String pessence,int plight,int pday,String pmonth,Candle cand,Date date){
 	Candle can1 = new Candle(pcolor,psize,pessence,plight);
 	Date dat1 = new Date(pday,pmonth);
@@ -56,6 +75,12 @@ public String addArchangel(String pname,String pphoto,String ppower,String ppray
     }
     return msg;
 }
+/**
+* This method search an archangel by name <br>
+* <b>post: </b> The archangel has been searched<br>
+* @param name Name of the archangel to look for. name != null &amp;&amp; name != "".
+* @return angel The archangel founded.
+*/
 
 public Archangel buscarName(String name){
 	boolean val = false;
@@ -75,6 +100,12 @@ public Archangel buscarName(String name){
 return angel;
 
 }
+/**
+* This method search an archangel by power <br>
+* <b>post: </b> The archangel has been searched<br>
+* @param pow Power of the archangel to look for. pow != null &amp;&amp; pow != "".
+* @return angel The archangel founded.
+*/
 public Archangel buscarPower(String pow){
 	boolean val = false;
     Archangel angel = null;
@@ -96,6 +127,11 @@ return angel;
 public int getCant(){
 	return cant;
 }
+/**
+* This method turn a archangel object into a chain text looking by his name <br>
+* <b>post: </b> The archangel has been transformed.<br>
+* @param nam Name of the archangel to look for. nam != null &amp;&amp; nam != "".
+*/
 public void toStringName(String nam){
      	
         boolean val = false;
@@ -118,6 +154,11 @@ public void toStringName(String nam){
      }
 	
 }
+/**
+* This method turn a archangel object into a chain text looking by his power.<br>
+* <b>post: </b> The archangel has been transformed.<br>
+* @param pow Power of the archangel to look for. pow != null &amp;&amp; pow != "".
+*/
 public void toStringPower(String pow){
      	
         boolean val = false;
@@ -140,6 +181,11 @@ public void toStringPower(String pow){
      }
 	
 }
+/**
+* This method show the celebrations to do in a determined month <br>
+* <b>post: </b> The information has been showed <br>
+* @param mon Month to look for. mon != null &amp;&amp; mon != "".
+*/
 public void showMonth(String mon){
 	boolean val = false;
 	for(int i =0;i<arch.length && !val;i++){
@@ -158,7 +204,11 @@ public void showMonth(String mon){
 		}
 	}
 }
-
+/**
+* This method show all the celebrations <br>
+* <b>post: </b> The celebrations has been printed.<br>
+* @return msg Chain text with all the celebrations. msg != null &amp;&amp; msg != "".
+*/
 public String showAll(){
 	String msg = "";
 	boolean val = false;
@@ -173,7 +223,11 @@ public String showAll(){
 	}
 	return msg;
 }
-
+/**
+* This method count the registered archangels <br>
+* <b>post: </b> The archangels has been counted<br>
+* @return cont Number of archangels registered. cont != null &amp;&amp; cont != "".
+*/
 public int count(){
 	boolean val = false;
 	int cont = 0;
