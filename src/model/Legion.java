@@ -173,7 +173,7 @@ public String showAll(){
 	return msg;
 }
 
-public int Count(){
+public int count(){
 	boolean val = false;
 	int cont = 0;
 	for(int i =0;i<arch.length && !val;i++){

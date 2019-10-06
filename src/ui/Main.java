@@ -46,7 +46,7 @@ switch(option){
     System.out.println(obj.showAll());
     break;
     case 6:
-    System.out.println("Yo have registered "+ obj.Count() +" angels.\n");
+    System.out.println("Yo have registered "+ obj.count() +" angels.\n");
     break;
     case 7:
     val=false;
@@ -60,21 +60,7 @@ switch(option){
 
 }
 
-/*public void createCandle(){
-	Scanner teclado = new Scanner(System.in);
-	Scanner teclado1 = new Scanner(System.in);
-	Scanner teclado2 = new Scanner(System.in);
-	System.out.print("Enter the color of the color");
-	String color =teclado.nextLine();
-    System.out.print("Enter the size of the candle");
-	double size =teclado1.nextDouble();
-	System.out.print("Enter the essence of the candle");
-	String essence =teclado.nextLine();
-	System.out.print("Enter the light Degree of the candle\n");
-	int light =teclado2.nextInt();
-    objLeg.addCandle(color,size,essence,light);
-}
-*/
+
 public void createArchangel(){
 	Scanner teclado = new Scanner(System.in);
 	Scanner teclado1 = new Scanner(System.in);
@@ -128,8 +114,8 @@ public String showAll(){
 	String msg =objLeg.showAll();
 	return msg;
 }
-public int Count(){
-	int cont = objLeg.Count();
+public int count(){
+	int cont = objLeg.count();
 	return cont;
 }
 }
