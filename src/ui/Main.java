@@ -46,7 +46,7 @@ switch(option){
     System.out.println(obj.showAll());
     break;
     case 6:
-    System.out.println("Yo have registered "+ obj.count() +" angels.\n");
+    System.out.println("You have registered "+ obj.count() +" angels.\n");
     break;
     case 7:
     val=false;
